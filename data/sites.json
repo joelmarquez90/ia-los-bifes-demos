@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "deliacafe",
+    "code": "deliacafe",
+    "name": "Delhia Café Haedo",
+    "tagline": "Café de especialidad en el corazón de Haedo",
+    "category": "cafe",
+    "address": "Dr. Jerónimo Fasola 898, Haedo, Buenos Aires",
+    "phone": "1173648165",
+    "whatsappPhone": "5491173648165",
+    "hours": "Lunes a Domingo · Abierto hasta las 23:00",
+    "rating": 4.6,
+    "reviews": 197,
+    "priceRange": "$10.000 – $20.000",
+    "mapsCid": "9480284260326726539",
+    "googlePlaceId": "ChIJ35YzBrS5vJURi1uAWk68kIM",
+    "primaryColor": "#6B3A2A",
+    "accentColor": "#D4956A",
+    "emoji": "☕",
+    "services": ["Café de especialidad", "Desayunos y meriendas", "Brunch", "WiFi gratis", "Se permiten perros"],
+    "description": "Un café cálido y acogedor donde cada taza cuenta una historia. Especialidad en cafés de origen, desayunos y meriendas caseras en el corazón de Haedo."
+  }
+]
