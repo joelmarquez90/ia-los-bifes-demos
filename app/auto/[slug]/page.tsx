@@ -19,6 +19,8 @@ interface DemoData {
   accentColor: string;
   rating: number;
   reviews: number;
+  heroPhoto?: string;   // real photo from Google Places
+  validated?: boolean;
 }
 
 async function getDemo(slug: string): Promise<DemoData | null> {
@@ -58,8 +60,16 @@ export default async function AutoDemoPage({
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section
         className="relative min-h-[65vh] flex flex-col items-center justify-end text-center px-6 pb-12 overflow-hidden"
-        style={{ background: `linear-gradient(135deg, #111 0%, ${primaryColor}55 100%)` }}
+        style={site.heroPhoto ? undefined : { background: `linear-gradient(135deg, #111 0%, ${primaryColor}55 100%)` }}
       >
+        {/* Real photo from Google Places */}
+        {site.heroPhoto && (
+          <>
+            <img src={site.heroPhoto} alt={site.businessName} className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-[#0a0a0a]" />
+          </>
+        )}
+
         {/* Top color bar */}
         <div className="absolute top-0 left-0 right-0 h-1" style={{ background: accentColor }} />
 
